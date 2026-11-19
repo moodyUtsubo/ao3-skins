@@ -1,0 +1,359 @@
+#header {
+  position: relative;
+  height: 65vh;
+  min-height: 350px;
+  max-height: 700px;
+  background-image: url("https://twistedwonderland.wiki.gg/images/Card_Azul_SSR_Dorm_Uniform_Groovy.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+#header .primary.navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header .primary.navigation,
+#header .primary.navigation ul,
+#header .primary.navigation li {
+  background: #0d1b2a !important;
+  background-image: none !important;
+  border: none !important;
+}
+
+#header .primary.navigation a {
+  background: #415a77 !important;
+  color: #ffffff !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  margin: 6px 6px !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 8px rgba(120,160,255,0.25);
+}
+
+#header .primary.navigation a:hover,
+#header .primary.navigation a:focus {
+  background: #5f7ea3 !important;
+  box-shadow: 0 0 14px rgba(120,160,255,0.45);
+  transform: translateY(-1px);
+}
+
+#header .primary.navigation li.current a {
+  background: #778da9 !important;
+  box-shadow: 0 0 16px rgba(150,190,255,0.55);
+}
+
+#header .primary.navigation input[type="text"] {
+  background: #f4f7fb !important;
+  border: 1px solid #415a77 !important;
+  border-radius: 20px !important;
+  padding: 6px 12px !important;
+  color: #0d1b2a !important;
+}
+
+#header .primary.navigation input[type="submit"] {
+  background: #415a77 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 20px !important;
+  padding: 6px 14px !important;
+  margin-left: 6px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 8px rgba(120,160,255,0.25);
+}
+
+#header .primary.navigation input[type="submit"]:hover {
+  background: #5f7ea3 !important;
+  box-shadow: 0 0 14px rgba(120,160,255,0.45);
+}
+
+#header .heading a {
+  font-size: 0 !important;
+}
+
+#header .heading a::after {
+  content: "Archive of Our Own";
+  color: #f0f6ff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#header .heading img {
+  display: none;
+}
+
+#header .heading {
+  position: absolute;
+  bottom: 100px;
+  left: 4%;
+}
+
+#header .user.navigation,
+#header .user.navigation a {
+  color: #0b1d3a !important;
+  text-shadow: 0 1px 4px rgba(255,255,255,0.6);
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+#header .user.navigation a:hover {
+  color: #142f5c !important;
+}
+
+#outer,
+#main,
+#content {
+  background: linear-gradient(to bottom, #edf2f8, #f8fbff);
+}
+
+#dashboard.own {
+  border-top: 15px solid #0d1b2a;
+  border-bottom: 15px solid #0d1b2a;
+}
+
+#dashboard {
+  border-top: 15px solid #0d1b2a;
+  border-bottom: 15px solid #0d1b2a;
+}
+
+li.blurb {
+  border: 1.5px solid #415a77 !important;
+  border-radius: 14px;
+  padding: 16px !important;
+  margin-bottom: 20px !important;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 6px 18px rgba(13,27,42,0.10);
+  transition: all 0.3s ease;
+}
+
+li.blurb:hover {
+  box-shadow: 0 8px 24px rgba(13,27,42,0.18);
+  transform: translateY(-3px);
+}
+
+li.blurb h4.heading a {
+  color: #1b3a5f !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+li.blurb h4.heading a:hover {
+  color: #415a77 !important;
+  text-shadow: 0 0 6px rgba(120,160,255,0.4);
+}
+
+li.blurb a[rel="author"] {
+  color: #415a77 !important;
+  font-weight: 600;
+}
+
+li.blurb a[rel="author"]:hover {
+  color: #1b3a5f !important;
+}
+
+li.blurb .tags a {
+  background: #e6edf5;
+  color: #274c77 !important;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  margin: 2px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+li.blurb .tags a:hover {
+  background: #415a77;
+  color: #ffffff !important;
+  box-shadow: 0 0 6px rgba(120,160,255,0.35);
+}
+
+li.blurb .tags.commas li::after,
+ul.tags.commas li::after {
+  content: "★" !important;
+  color: #778da9;
+  font-size: 0.8em;
+  margin: 0 4px;
+  text-shadow: 0 0 6px rgba(120,160,255,0.45);
+}
+
+li.blurb .tags.commas li:last-child::after,
+ul.tags.commas li:last-child::after {
+  content: "" !important;
+}
+
+#dashboard ul li a,
+#dashboard .navigation.actions a {
+  color: #274c77 !important;
+  text-decoration: none !important;
+}
+
+#dashboard ul li a:hover,
+#dashboard ul li a:focus,
+#dashboard .navigation.actions a:hover,
+#dashboard .navigation.actions a:focus {
+  background: #415a77 !important;
+  color: #ffffff !important;
+}
+
+#dashboard .current {
+  background: #778da9 !important;
+  color: #ffffff !important;
+}
+
+#dashboard .current::before {
+  content: "\2693\FE0E";
+  display: inline-block;
+  margin-right: 0.4em;
+}
+
+#dashboard .current::after {
+  content: "\2693\FE0E";
+  display: inline-block;
+  margin-left: 0.4em;
+}
+
+#footer {
+  background: #0d1b2a !important;
+  background-image: none !important;
+  border-top: 15px solid #0d1b2a !important;
+  color: #e6edf5 !important;
+}
+
+#footer ul,
+#footer li,
+#footer .navigation,
+#footer .navigation.actions,
+#footer .module {
+  background: transparent !important;
+  border-color: #415a77 !important;
+  color: #e6edf5 !important;
+}
+
+#footer h3,
+#footer h4,
+#footer .heading {
+  color: #f0f6ff !important;
+  text-shadow: 0 0 8px rgba(255,255,255,0.35);
+}
+
+#footer a,
+#footer a:link,
+#footer a:visited {
+  background: transparent !important;
+  color: #a9c1e0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+#footer a:hover,
+#footer a:focus {
+  background: #415a77 !important;
+  color: #ffffff !important;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: #e6edf5 !important;
+  border: 2px solid #415a77 !important;
+  box-shadow: 0 0 0 1px #f8fbff;
+  border-radius: 10px;
+}
+
+.listbox .heading,
+.listbox h3.heading,
+fieldset fieldset.listbox .heading {
+  color: #1b3a5f !important;
+  background: transparent !important;
+  text-shadow: none;
+  font-weight: bold !important;
+}
+
+.listbox a,
+.listbox a:link,
+.listbox a:visited {
+  color: #274c77 !important;
+}
+
+.listbox a:hover,
+.listbox a:focus {
+  background: #415a77 !important;
+  color: #ffffff !important;
+}
+
+h2.heading a.tag,
+h2.heading a.tag:link,
+h2.heading a.tag:visited {
+  background: transparent !important;
+  color: #1b3a5f !important;
+  border-color: #778da9 !important;
+}
+
+h2.heading a.tag:hover,
+h2.heading a.tag:focus,
+h2.heading a.tag:active {
+  background: #5f7ea3 !important;
+  color: #ffffff !important;
+}
+
+h5.fandoms.heading a.tag,
+h5.fandoms.heading a.tag:link,
+h5.fandoms.heading a.tag:visited,
+.fandoms a.tag,
+.fandoms a.tag:link,
+.fandoms a.tag:visited {
+  color: #1b3a5f !important;
+  font-weight: bold !important;
+}
+
+h5.fandoms.heading a.tag:hover,
+h5.fandoms.heading a.tag:focus,
+h5.fandoms.heading a.tag:active,
+.fandoms a.tag:hover,
+.fandoms a.tag:focus,
+.fandoms a.tag:active {
+  background: #415a77 !important;
+  color: #ffffff !important;
+}
+
+dd.tags a.tag,
+dd.tags a.tag:link,
+dd.tags a.tag:visited {
+  background: #e6edf5 !important;
+  color: #274c77 !important;
+  font-weight: normal !important;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  margin: 2px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+dd.tags a.tag:hover,
+dd.tags a.tag:focus,
+dd.tags a.tag:active {
+  background: #415a77 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 6px rgba(120,160,255,0.35);
+}
+
+dd.tags ul.commas li::after {
+  content: "★" !important;
+  color: #778da9;
+  font-size: 0.8em;
+  margin: 0 4px;
+  text-shadow: 0 0 6px rgba(120,160,255,0.45);
+}
+
+dd.tags ul.commas li:last-child::after {
+  content: "" !important;
+}
